@@ -1,0 +1,166 @@
+@keyframes bubble-trans-up{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-80vh);
+    }
+}
+
+#bubbles-container div{
+    opacity: 0;
+    animation: bubble-trans-up 7s ease-in-out infinite;
+}
+
+#bubbles-container div:nth-child(1){
+    animation-delay: 2s;
+}
+#bubbles-container div:nth-child(2){
+    animation-delay: 1s;
+}
+#bubbles-container div:nth-child(3){
+    animation-delay: 3s;
+}
+#bubbles-container div:nth-child(4){
+    animation-delay: 4.5s;
+}
+#bubbles-container div:nth-child(5){
+    animation-delay: 7s;
+}
+#bubbles-container div:nth-child(6){
+    animation-delay: 6s;
+}
+#bubbles-container div:nth-child(7){
+    animation-delay: 5s;
+}
+
+@keyframes water{
+    0%,100%
+    {
+        clip-path: polygon(0% 58%, 10% 58%, 22% 63%, 32% 69%, 45% 71%, 59% 72%, 78% 74%, 93% 74%, 100% 74%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 70%, 10% 71%, 24% 72%, 39% 72%, 53% 65%, 62% 59%, 75% 53%, 90% 50%, 100% 50%, 100% 100%, 0% 100%);
+    }
+}
+
+/* original animation */
+/* @keyframes water{ 
+    0%,100%
+    {
+        clip-path: polygon(1% 58%, 12% 54%, 22% 63%, 32% 69%, 45% 71%, 59% 72%, 78% 74%, 93% 74%, 100% 75%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 70%, 10% 71%, 24% 72%, 38% 73%, 53% 65%, 62% 59%, 75% 53%, 90% 50%, 100% 51%, 100% 100%, 0% 100%);
+    }
+} */
+
+.sb{
+    -webkit-text-stroke: 1px #00999F;
+}
+
+#nav_bar {
+    transition: all 0.5s ease;
+}
+
+.circular_progressbar{
+    background: conic-gradient(rgb(69, 208, 236) 30deg, white 0deg);
+    z-index: 10;
+}
+.circular_progressbar.html::before{
+    content: '';
+    position: absolute;
+    height: 147px;
+    width: 147px;
+    /* background: #000; */
+    background-image: url("../Images/front-end.png");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: -10;
+}
+.circular_progressbar.python::before{
+    content: '';
+    position: absolute;
+    height: 147px;
+    width: 147px;
+    /* background: #000; */
+    background-image: url("../Images/python.png");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: -10;
+}
+.circular_progressbar.uiux::before{
+    content: '';
+    position: absolute;
+    height: 147px;
+    width: 147px;
+    /* background: #000; */
+    background-image: url("../Images/ui-ux.png");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: -10;
+}
+.water_fill{
+    background-image: url("../Images/Wave.png");
+    background-repeat: repeat-x;
+    animation: water-fill 5s linear normal;
+    opacity: 40%;
+    /* background-position: 0px 200px; */
+}
+.water_fill_python{
+    background-image: url("../Images/11zon_resized_3.png");
+    background-repeat: repeat-x;
+    animation: water-fill-python 5s linear normal;
+    opacity: 40%;
+    /* background-position: 0px 200px; */
+}
+.water_fill_bubble{
+    background-image: url("../Images/11zon_resized_3.png");
+    background-repeat: repeat-x;
+    animation: water-flow 5s linear normal;
+    opacity: 40%;
+    /* background-position: 0px 200px; */
+}
+
+@keyframes water-fill{
+    0%{
+        background-position: 0px 200px;
+    }
+    100%{
+        /* background-position: 1500px 80px; */
+        background-position: 1500px 0rem;
+    }
+}
+
+@keyframes water-flow{
+    100%{
+        background-position: 1500px 0rem;
+    }
+}
+
+@keyframes water-fill-python{
+    0%{
+        background-position: 0px 200px;
+    }
+    100%{
+        background-position: 1500px 80px;
+    }
+}
+
+@keyframes water-flow-python{
+    0%{
+        background-position: 0px 80px;
+    }
+    100%{
+        background-position: 1500px 80px;
+    }
+}

@@ -1,0 +1,9 @@
+#skill_info::-webkit-scrollbar{
+    display: none;
+}
+#about_info::-webkit-scrollbar{
+    display: none;
+}
+#message::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/custom_animation.css">
+    <link rel="stylesheet" href="CSS/scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script type="text/javascript" src="output.js"></script>
+    <link rel="shortcut icon" href="Images/fortfio_logo.png" type="image/x-icon">
+    <title>Fortfio</title>
+</head>
+
+<body class="bg-gradient-to-t from-[#06132C] to-[#00999F] flex justify-center items-center m-0 p-0  " style="font-family: 'Tsukimi Rounded', sans-serif;">
+    
+    <div id="hero_name" class="-z-50">
+        <p class="text-white sm:text-[1.8rem] w-auto text-2xl sm:w-80">Hi there!</p>
+        <div class="relative text-white tracking-tighter font-medium h-auto">
+            <p class=" absolute sm:text-[80px] text-white text-[60px] sb sm:w-[26.5rem]">I am <span class="style_name">Aryan</span></p>
+            <p class="sm:text-[80px] text-[#0A507D] text-[60px] animate-water sm:w-[26.5rem]">I am <span class="style_name">Aryan</span></p>
+        </div>
+    </div>
+
+    <div class="absolute bottom-4 flex flex-col items-center gap-2">
+        <div id="skills" class="backdrop-blur-sm bg-white/10 p-3 rounded-xl animate__animated animate__zoomIn animate__faster hidden">
+            <div class="flex py-2 px-2 w-[640px] justify-evenly bg-transparent rounded-xl h-[310px] gap-10 items-center z-10">
+                <div class="flex flex-col gap-1 relative h-fit items-center overflow-hidden justify-center animate__animated shadow-xl rounded-lg px-3 py-2 backdrop-blur-sm bg-white/10">
+                    <div class="absolute left-0 w-full h-full -z-10 container-water"></div>
+                    <div class="h-40 w-40 z-10 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar html">
+                    </div>                    
+                    <div class="text_html text-black rounded-lg p-1 z-10 text-center font-semibold"></div>
+                    <div class="text-[#45D0EC] z-10 text-center font-semibold">HTML</div>
+                </div>
+                <div class="flex flex-col gap-1 h-fit items-center justify-center animate__animated overflow-hidden shadow-xl rounded-lg px-3 py-2 backdrop-blur-sm bg-white/10">
+                    <div class="absolute left-0 w-full h-full -z-10 container-water"></div>
+                    <div class="h-40 w-40 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar python">
+                    </div>                    
+                    <div class="text_python text-black p-1 text-center font-semibold"></div>
+                    <div class="text-[#45D0EC] text-center font-semibold">Python</div>
+                </div>
+                <div class="flex flex-col gap-1 h-fit items-center justify-center overflow-hidden animate__animated shadow-xl rounded-lg px-3 py-2 backdrop-blur-sm bg-white/10">
+                    <div class="absolute left-0 w-full h-full -z-10 container-water"></div>
+                    <div class="h-40 w-40 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar uiux">
+                    </div>                    
+                    <div class="text_uiux text-black p-1 text-center font-semibold"></div>
+                    <div class="text-[#45D0EC] text-center font-semibold">UI/UX</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about" class="backdrop-blur-sm bg-white/10 flex-col pt-4 pb-5 px-3 h-[322px] w-[663px] rounded-xl animate__animated animate__zoomIn animate__faster hidden">
+            <div class="flex gap-4">
+                <div class="flex relative justify-center items-center backdrop-blur-sm bg-white/10 rounded-full shadow-2xl">
+                    <img src="Images/me_6.png" alt="" class="">
+                </div>
+                <div class="flex flex-col items-center gap-4 justify-center">
+                    <div class="flex justify-center">
+                        <p id="about_head" class="text-[#2e6a76] text-2xl font-bold bg-slate-300 text-center px-1 rounded-lg py-1">About Me</p>
+                    </div>
+                    <div id="about_info" class="flex justify-center h-[233px] overflow-y-scroll">
+                        <p class="text-white text-justify text-xl leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum qui aperiam natus fuga fugiat! Optio consequuntur eaque excepturi omnis quo animi delectus eveniet? Sunt excepturi ex in nulla? Voluptatibus fuga totam excepturi necessitatibus hic ea provident aut asperiores, dicta accusantium sequi? Obcaecati facere assumenda, blanditiis nostrum quidem commodi ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero architecto dolore aliquid reprehenderit dignissimos, nobis, iste nemo omnis vitae minima corporis nostrum officia in laborum ex aperiam nulla quaerat est dolores beatae nesciunt!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="backdrop-blur-sm items-center bg-white/10 p-3 rounded-xl animate__animated animate__zoomIn animate__faster hidden">
+            <form class="flex gap-8 items-center justify-center mb-0 h-[310px] w-[640px]">
+                <div class="flex flex-col justify-center mt-6">
+                    <input type="text" name="name" id="" placeholder="Name" class="text-lg bg-transparent border-[1px] px-2 py-1 rounded-lg text-[#09E6F6] focus:text-white focus:outline-[#09E6F6] h-12"><br>
+                    <input type="email" name="email" id="" placeholder="Email Id" class="text-lg bg-transparent border-[1px] px-2 py-1 rounded-lg text-[#09E6F6] focus:text-white focus:outline-[#09E6F6] h-12"><br>
+                    <input type="tel" name="number" id="" placeholder="Contact No." class="text-lg bg-transparent border-[1px] px-2 py-1 rounded-lg text-[#09E6F6] focus:text-white focus:outline-[#09E6F6] h-12">
+                    <div class="flex justify-between py-5">
+                        <button type="submit" class="text-[#09E6F6] border-2 py-3 px-7 rounded-lg hover:bg-cyan-700 hover:text-white hover:scale-110 duration-300 font-semibold">Send</button>
+                        <div class="flex items-center justify-center text-[#09E6F6] border-2 p-3 rounded-lg hover:bg-cyan-700 hover:text-white hover:scale-110 duration-300 font-semibold"><a href="tel:+918340394090">Call Now</a></div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center mt-6">
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="How can i help you?" class="text-lg bg-transparent border-[1px] px-2 pt-[0.6rem] pb-[0.6rem] rounded-lg text-[#09E6F6] focus:text-white focus:outline-[#09E6F6] resize-none placeholder:text-center"></textarea>
+                    <div class="flex flex-wrap py-5 md:flex-row md:justify-between gap-4">
+                        <div class="py-4 px-5 text-white border-2 border-white rounded-full z-10 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:h-0 before:w-[100%] before:bg-[#07A9C4] before:-z-10 before:duration-500 hover:before:h-full hover:cursor-pointer wow animate__animated animate__zoomIn contact text-2xl">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="p-4 text-white border-2 border-white rounded-full z-10 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-0 before:h-[100%] before:bg-[#07A9C4] before:-z-10 before:duration-500 hover:before:w-full hover:cursor-pointer wow animate__animated animate__zoomIn contact text-2xl">
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                        <div class="p-4 text-white border-2 border-white rounded-full z-10 relative overflow-hidden before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-[100%] before:bg-[#07A9C4] before:-z-10 before:duration-500 hover:before:h-full hover:cursor-pointer wow animate__animated animate__zoomIn contact text-2xl">
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                        <div class="p-4 text-white border-2 border-white rounded-full z-10 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-[100%] before:bg-[#07A9C4] before:-z-10 before:duration-500 hover:before:w-full hover:cursor-pointer wow animate__animated animate__zoomIn contact text-2xl">
+                            <a href="#" class="fa fa-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <nav class="flex items-center justify-center rounded-xl z-10 backdrop-blur-sm bg-white/10 w-[435px]" id="nav_bar">
+            <div class="rounded-xl  absolute flex gap-10 items-center px-3 py-3 z-50 w-full">
+                <ul class="w-16 flex justify-center items-center backdrop-blur-sm bg-white/40 rounded-full">
+                    <li><img src="Images/me_6.png" alt=""></li>
+                </ul>
+                <ul class="flex text-xl text-white gap-12 font-semibold justify-evenly w-full">
+                    <!-- <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li> -->
+                    <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li>
+                    <li id="about-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">About Me</li>
+                    <li id="contact-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Contact</li>
+                </ul>
+            </div>
+            <div class="rounded-xl w-full bg-[#00999F] flex gap-10 items-center animate-water opacity-60 px-3 py-3 -z-50">
+                <ul class="w-16 bg-[#00999F] rounded-full flex justify-center items-center">
+                    <li><img src="Images/me_4-fotor-20240115134454.png" alt=""></li>
+                </ul>
+                <ul class="flex text-xl text-white gap-12 font-semibold justify-evenly w-full">
+                    <!-- <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li> -->
+                    <!-- <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li>
+                    <li id="about-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">About Me</li>
+                    <li id="contact-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Contact</li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="flex absolute bottom-2 justify-between w-full flex-wrap -z-10" id="bubbles-container">
+        <div class="z-100 sm:w-24 w-12"><img src="Images/bubble.png" alt=""></div>
+        <div class="z-100 w-16"><img src="Images/bubble.png" alt=""></div>
+        <div class="z-100 w-10"><img src="Images/bubble.png" alt=""></div>
+        <div class="z-100 sm:w-20 w-10"><img src="Images/bubble.png" alt=""></div>
+        <div class="z-100 w-10 "><img src="Images/bubble.png" alt=""></div>
+        <div class="z-100 sm:w-32 w-11"><img src="Images/bubble.png" alt=""></div>
+        <div class="z-100 sm:w-12 w-5"><img src="Images/bubble.png" alt=""></div>
+    </div>
+
+    <script src="JavaScript/click.js"></script>
+    <!-- <script src="output.js"></script> -->
+
+</body>
+</html>
