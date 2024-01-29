@@ -110,7 +110,7 @@
     z-index: -10;
 }
 .water_fill{
-    background-image: url("../Images/Wave.png");
+    background-image: url("../Images/11zon_resized_3.png");
     background-repeat: repeat-x;
     animation: water-fill 5s linear normal;
     opacity: 40%;
