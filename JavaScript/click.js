@@ -116,15 +116,21 @@ document.getElementById("skill-btn").onclick = function(){
             if(child_ele.innerText == "Python"){
                 water_fill[i].classList.add("water_fill_python");
             }
-            else{
+            else if(child_ele.innerText == "UI/UX"){
+                water_fill[i].classList.add("water_fill_uiux");
+            }
+            else if(child_ele.innerText == "HTML"){
                 water_fill[i].classList.add("water_fill");
             }
             water_fill[i].addEventListener("animationend", function handleAnimation(){
                 if(child_ele.innerText == "Python"){
                     water_fill[i].style.animation = 'water-flow-python 5s linear infinite';
                 }
-                else{
+                else if(child_ele.innerText == "HTML"){
                     water_fill[i].style.animation = 'water-flow 5s linear infinite';
+                }
+                else if(child_ele.innerText == "UI/UX"){
+                    water_fill[i].style.animation = 'water-flow-uiux 5s linear infinite';
                 }
             })
         }
@@ -198,9 +204,13 @@ document.getElementById("skill-btn").onclick = function(){
                 water_fill[i].classList.remove("water_fill_python");
                 water_fill[i].style.animation = 'water-fill-python 5s linear normal';
             }
-            else{
+            else if(child_ele.innerText == "HTML"){
                 water_fill[i].classList.remove("water_fill");
                 water_fill[i].style.animation = 'water-fill 5s linear normal';
+            }
+            else if(child_ele.innerText == "UI/UX"){
+                water_fill[i].classList.remove("water_fill_uiux");
+                water_fill[i].style.animation = 'water-fill-uiux 5s linear normal';
             }
             // water_fill[i].style.background = 'url("11zon_resized_2.png") repeat-x 0px 200px';
         }

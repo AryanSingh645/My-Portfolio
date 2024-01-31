@@ -110,21 +110,28 @@
     z-index: -10;
 }
 .water_fill{
-    background-image: url("../Images/11zon_resized_3.png");
+    background-image: url("../Images/11zon_resized_5.png");
     background-repeat: repeat-x;
     animation: water-fill 5s linear normal;
     opacity: 40%;
     /* background-position: 0px 200px; */
 }
 .water_fill_python{
-    background-image: url("../Images/11zon_resized_3.png");
+    background-image: url("../Images/11zon_resized_5.png");
     background-repeat: repeat-x;
     animation: water-fill-python 5s linear normal;
     opacity: 40%;
     /* background-position: 0px 200px; */
 }
+.water_fill_uiux{
+    background-image: url("../Images/11zon_resized_5.png");
+    background-repeat: repeat-x;
+    animation: water-fill-uiux 5s linear normal;
+    opacity: 40%;
+    /* background-position: 0px 200px; */
+}
 .water_fill_bubble{
-    background-image: url("../Images/11zon_resized_3.png");
+    background-image: url("../Images/11zon_resized_5.png");
     background-repeat: repeat-x;
     animation: water-flow 5s linear normal;
     opacity: 40%;
@@ -136,14 +143,16 @@
         background-position: 0px 200px;
     }
     100%{
-        /* background-position: 1500px 80px; */
-        background-position: 1500px 0rem;
+        background-position: 1500px 24px;
     }
 }
 
 @keyframes water-flow{
+    0%{
+        background-position: 0px 24px;
+    }
     100%{
-        background-position: 1500px 0rem;
+        background-position: 1500px 24px;
     }
 }
 
@@ -152,15 +161,32 @@
         background-position: 0px 200px;
     }
     100%{
-        background-position: 1500px 80px;
+        background-position: 1500px 72px;
     }
 }
 
 @keyframes water-flow-python{
     0%{
-        background-position: 0px 80px;
+        background-position: 0px 72px;
     }
     100%{
-        background-position: 1500px 80px;
+        background-position: 1500px 72px;
+    }
+}
+@keyframes water-fill-uiux{
+    0%{
+        background-position: 0px 200px;
+    }
+    100%{
+        background-position: 1500px 168px;
+    }
+}
+
+@keyframes water-flow-uiux{
+    0%{
+        background-position: 0px 168px;
+    }
+    100%{
+        background-position: 1500px 168px;
     }
 }
