@@ -18,83 +18,102 @@ let a = false;
 
 // })
 
-function remainAnimation(){
-    let stylesheet = document.styleSheets[1];
-    let rules = stylesheet.cssRules;
-    let keyframeRule;
-    let keyframeRule_2;
+// function remainAnimation(){
+//     let stylesheet = document.styleSheets[1];
+//     let rules = stylesheet.cssRules;
+//     let keyframeRule;
+//     let keyframeRule_2;
 
-    for(let i = 0; i < rules.length; i++){
-        if(rules[i].name === "water-fill"){
-            keyframeRule = rules[i];
-            break;
-        }
-    }
-    for(let i = 0; i < rules.length; i++){
-        if(rules[i].name === "water-flow"){
-            keyframeRule_2 = rules[i];
-            break;
-        }
-    }
+//     for(let i = 0; i < rules.length; i++){
+//         if(rules[i].name === "water-fill"){
+//             keyframeRule = rules[i];
+//             break;
+//         }
+//     }
+//     for(let i = 0; i < rules.length; i++){
+//         if(rules[i].name === "water-flow"){
+//             keyframeRule_2 = rules[i];
+//             break;
+//         }
+//     }
 
-    if(keyframeRule){
-        keyframeRule.deleteRule('0%');
-        keyframeRule.appendRule('0% { background-position: 0px 200px; }');
-        keyframeRule.deleteRule('100%');
-        keyframeRule.appendRule('100% { background-position: 1500px 0rem; }');
-        // keyframeRule.deleteRule('0%');
-        // keyframeRule.appendRule('0% { background-position: 0px 200px; }');
-        // keyframeRule.deleteRule('100% { background-position: 1500px 100px;}');
-        // keyframeRule.appendRule('100% { background-position: 1500px 0rem; }');
+//     if(keyframeRule){
+//         keyframeRule.deleteRule('0%');
+//         keyframeRule.appendRule('0% { background-position: 0px 200px; }');
+//         keyframeRule.deleteRule('100%');
+//         keyframeRule.appendRule('100% { background-position: 1500px 0rem; }');
+//         // keyframeRule.deleteRule('0%');
+//         // keyframeRule.appendRule('0% { background-position: 0px 200px; }');
+//         // keyframeRule.deleteRule('100% { background-position: 1500px 100px;}');
+//         // keyframeRule.appendRule('100% { background-position: 1500px 0rem; }');
+//     }
+//     if(keyframeRule_2){
+//         keyframeRule.deleteRule('100%');
+//         keyframeRule.appendRule('100% { background-position: 1500px 0rem; }');
+//     }
+// }
+// function changeAnimation(){
+//     let stylesheet = document.styleSheets[1];
+//     let rules = stylesheet.cssRules;
+//     let keyframeRule;
+//     let keyframeRule_2;
+
+//     for(let i = 0; i < rules.length; i++){
+//         if(rules[i].name == "water-fill"){
+//             keyframeRule = rules[i];
+//             break;
+//         }
+//     }
+//     for(let i = 0; i < rules.length; i++){
+//         if(rules[i].name == "water-flow"){
+//             keyframeRule_2 = rules[i];
+//             break;
+//         }
+//     }
+
+//     if(keyframeRule){
+//         keyframeRule.deleteRule('0%');
+//         keyframeRule.appendRule('0% { background-position: 0px 200px; }');
+//         keyframeRule.deleteRule('100%');
+//         keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
+//         console.log('Inside function statements');
+//         // keyframeRule.deleteRule('0% { background-position: 0px 200px; }');
+//         // keyframeRule.appendRule('0% { background-position: 0px 200px; }');
+//         // keyframeRule.deleteRule('100% { background-position: 1500px 0rem; }');
+//         // keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
+//         // console.log('Inside function statements');
+//     }
+//     if(keyframeRule_2){
+//         keyframeRule.deleteRule('100%');
+//         keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
+//         console.log('Inside function_2 statements');
+//         // keyframeRule.deleteRule('100% { background-position: 1500px 0rem; }');
+//         // keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
+//         // console.log('Inside function_2 statements');
+//     }
+//     console.log('Inside function_2');
+// }
+
+function handleMediaQuery_Open(mediaQuery){
+    if(mediaQuery.matches){
+        document.getElementById("nav_bar").style.width = "563px";
+        document.getElementById("hero_name").style.transform = "translateY(-8rem)";
     }
-    if(keyframeRule_2){
-        keyframeRule.deleteRule('100%');
-        keyframeRule.appendRule('100% { background-position: 1500px 0rem; }');
+    else{
+        document.getElementById("hero_name").style.transform = "translateY(-11rem)";
+        document.getElementById("nav_bar").style.width = "663px";
     }
 }
-function changeAnimation(){
-    let stylesheet = document.styleSheets[1];
-    let rules = stylesheet.cssRules;
-    let keyframeRule;
-    let keyframeRule_2;
-
-    for(let i = 0; i < rules.length; i++){
-        if(rules[i].name == "water-fill"){
-            keyframeRule = rules[i];
-            break;
-        }
+function handleMediaQuery_Close(mediaQuery){
+    if(mediaQuery.matches){
+        document.getElementById("nav_bar").style.width = "360px";
     }
-    for(let i = 0; i < rules.length; i++){
-        if(rules[i].name == "water-flow"){
-            keyframeRule_2 = rules[i];
-            break;
-        }
+    else{
+        document.getElementById("nav_bar").style.width = "435px";
     }
-
-    if(keyframeRule){
-        keyframeRule.deleteRule('0%');
-        keyframeRule.appendRule('0% { background-position: 0px 200px; }');
-        keyframeRule.deleteRule('100%');
-        keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
-        console.log('Inside function statements');
-        // keyframeRule.deleteRule('0% { background-position: 0px 200px; }');
-        // keyframeRule.appendRule('0% { background-position: 0px 200px; }');
-        // keyframeRule.deleteRule('100% { background-position: 1500px 0rem; }');
-        // keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
-        // console.log('Inside function statements');
-    }
-    if(keyframeRule_2){
-        keyframeRule.deleteRule('100%');
-        keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
-        console.log('Inside function_2 statements');
-        // keyframeRule.deleteRule('100% { background-position: 1500px 0rem; }');
-        // keyframeRule.appendRule('100% { background-position: 1500px 100px; }');
-        // console.log('Inside function_2 statements');
-    }
-    console.log('Inside function_2');
 }
 
-
+const mediaQuery = window.matchMedia('(max-width: 780px)');
 document.getElementById("skill-btn").onclick = function(){
     if(a == false){
 
@@ -142,8 +161,7 @@ document.getElementById("skill-btn").onclick = function(){
             if(startValue_html == endValue_html){
                 clearInterval(circular_time_html);
             } 
-        }, 50);
-
+        }, 25);
         const circular_time_python = setInterval(() => {
             startValue_python++;
             circular_progressbar_python.style.background = `conic-gradient(rgb(69, 208, 236) ${startValue_python * 3.6}deg, white 0deg)`;
@@ -160,6 +178,7 @@ document.getElementById("skill-btn").onclick = function(){
                 clearInterval(circular_time_uiux);
             } 
         }, 25);
+
         circular_progressbar_html.parentElement.classList.add("animate__ZoomIn");
         circular_progressbar_python.parentElement.classList.add("animate__ZoomIn");
         circular_progressbar_uiux.parentElement.classList.add("animate__ZoomIn");
@@ -179,6 +198,10 @@ document.getElementById("skill-btn").onclick = function(){
         document.getElementById("contact").classList.add("animate__zoomOut");
         document.getElementById("about-btn").style.color = "white";
         document.getElementById("contact-btn").style.color = "white";
+
+        handleMediaQuery_Open(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaQuery_Open);               
+
         a = true;
         b = false;
         c = false;
@@ -214,7 +237,9 @@ document.getElementById("skill-btn").onclick = function(){
             }
             // water_fill[i].style.background = 'url("11zon_resized_2.png") repeat-x 0px 200px';
         }
-        // document.getElementById("skills").style.display = "none";
+        mediaQuery.removeEventListener('change', handleMediaQuery_Open);
+        handleMediaQuery_Close(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaQuery_Close);
         a = false;
     }
 }
@@ -239,6 +264,10 @@ document.getElementById("about-btn").onclick = function(){
         // document.getElementById("skills").style.display = "none";
         document.getElementById("skill-btn").style.color = "white";
         document.getElementById("contact-btn").style.color = "white";
+
+        handleMediaQuery_Open(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaQuery_Open);
+
         a = false;
         c = false;
     }
@@ -249,6 +278,11 @@ document.getElementById("about-btn").onclick = function(){
         document.getElementById("about").classList.add("animate__zoomOut");
         document.getElementById("about-btn").style.color = "white";
         // document.getElementById("about").style.display = "none";
+
+        mediaQuery.removeEventListener('change', handleMediaQuery_Open);
+        handleMediaQuery_Close(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaQuery_Close);
+
         b = false;
     }
 }
@@ -274,6 +308,10 @@ document.getElementById("contact-btn").onclick = function(){
         // document.getElementById("skills").style.display = "none";
         document.getElementById("skill-btn").style.color = "white";
         document.getElementById("about-btn").style.color = "white";
+
+        handleMediaQuery_Open(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaQuery_Open);
+
         a = false;
         b = false;
     }
@@ -284,12 +322,14 @@ document.getElementById("contact-btn").onclick = function(){
         document.getElementById("contact-btn").style.color = "white";
         document.getElementById("nav_bar").style.width = "435px";
         // document.getElementById("about").style.display = "none";
+
+        mediaQuery.removeEventListener('change', handleMediaQuery_Open);
+        handleMediaQuery_Close(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaQuery_Close);
+
         c = false;
     }
 }
-
-
-
 
 let ui = document.getElementById("ui");
 let android = document.getElementById("android");

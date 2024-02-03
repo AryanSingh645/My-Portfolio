@@ -18,34 +18,34 @@
 
 <body class="bg-gradient-to-t from-[#06132C] to-[#00999F] flex justify-center items-center m-0 p-0  " style="font-family: 'Tsukimi Rounded', sans-serif;">
     
-    <div id="hero_name" class="-z-50">
+    <div id="hero_name" class="-z-50 sm:mb-4">
         <p class="text-white sm:text-[1.8rem] w-auto text-2xl sm:w-80">Hi there!</p>
         <div class="relative text-white tracking-tighter font-medium h-auto">
-            <p class=" absolute sm:text-[80px] text-white text-[60px] sb sm:w-[26.5rem]">I am <span class="style_name">Aryan</span></p>
-            <p class="sm:text-[80px] text-[#0A507D] text-[60px] animate-water sm:w-[26.5rem]">I am <span class="style_name">Aryan</span></p>
+            <p class=" absolute sm:text-[80px] text-white text-[65px] sb ">I am <span class="style_name">Aryan</span></p>
+            <p class="sm:text-[80px] text-[#0A507D] text-[65px] animate-water ">I am <span class="style_name">Aryan</span></p>
         </div>
     </div>
 
     <div class="absolute bottom-4 flex flex-col items-center gap-2">
-        <div id="skills" class="backdrop-blur-sm bg-white/10 p-3 rounded-xl animate__animated animate__zoomIn animate__faster hidden">
-            <div class="flex py-2 px-2 w-[640px] justify-evenly bg-transparent rounded-xl h-[310px] gap-10 items-center z-10">
-                <div class="flex flex-col gap-1 relative h-fit items-center overflow-hidden justify-center animate__animated shadow-xl rounded-lg px-3 py-2 backdrop-blur-sm bg-white/10">
+        <div id="skills" class="backdrop-blur-sm bg-white/10 p-3 rounded-xl animate__animated animate__zoomIn animate__faster hidden ">
+            <div class="flex py-2 px-2 sm:w-[640px] w-[540px] justify-evenly bg-transparent rounded-xl sm:h-[310px] gap-10 items-center z-10 transition-all duration-500">
+                <div class="flex flex-col gap-1 relative h-fit items-center overflow-hidden justify-center animate__animated shadow-xl rounded-lg sm:px-3 px-5 py-2 backdrop-blur-sm bg-white/10">
                     <div class="absolute left-0 w-full h-full -z-10 container-water"></div>
-                    <div class="h-40 w-40 z-10 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar html">
-                    </div>                    
+                    <div class="sm:h-40 sm:w-40 h-32 w-32 z-10 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar html before:content-['*'] before:absolute before:h-[120px] before:w-[120px] before:bg-[url('/Images/front-end_2.png')] before:bg-cover before:rounded-full before:-z-10 sm:before:w-[150px] sm:before:h-[150px]">
+                    </div>
                     <div class="text_html text-black rounded-lg p-1 z-10 text-center font-semibold"></div>
                     <div class="text-[#45D0EC] z-10 text-center font-semibold">HTML</div>
                 </div>
-                <div class="flex flex-col gap-1 h-fit items-center justify-center animate__animated overflow-hidden shadow-xl rounded-lg px-3 py-2 backdrop-blur-sm bg-white/10">
+                <div class="flex flex-col gap-1 h-fit items-center justify-center animate__animated overflow-hidden shadow-xl rounded-lg sm:px-3 py-2 px-5 backdrop-blur-sm bg-white/10">
                     <div class="absolute left-0 w-full h-full -z-10 container-water"></div>
-                    <div class="h-40 w-40 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar python">
+                    <div class="sm:h-40 sm:w-40 h-32 w-32 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar python before:content-['*'] before:absolute before:h-[117px] before:w-[117px] before:bg-[url('/Images/python.png')] before:bg-cover before:rounded-full before:-z-10 sm:before:w-[147px] sm:before:h-[147px]">
                     </div>                    
                     <div class="text_python text-black p-1 text-center font-semibold"></div>
                     <div class="text-[#45D0EC] text-center font-semibold">Python</div>
                 </div>
-                <div class="flex flex-col gap-1 h-fit items-center justify-center overflow-hidden animate__animated shadow-xl rounded-lg px-3 py-2 backdrop-blur-sm bg-white/10">
+                <div class="flex flex-col gap-1 h-fit items-center justify-center overflow-hidden animate__animated shadow-xl rounded-lg sm:px-3 px-5 py-2 backdrop-blur-sm bg-white/10">
                     <div class="absolute left-0 w-full h-full -z-10 container-water"></div>
-                    <div class="h-40 w-40 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar uiux">
+                    <div class="sm:h-40 sm:w-40 h-32 w-32 overflow-hidden rounded-full text-white flex items-center justify-center relative circular_progressbar uiux before:content-['*'] before:absolute before:h-[117px] before:w-[117px] before:bg-[url('/Images/ui-ux.png')] before:bg-cover before:rounded-full before:-z-10 sm:before:w-[147px] sm:before:h-[147px]">
                     </div>                    
                     <div class="text_uiux text-black p-1 text-center font-semibold"></div>
                     <div class="text-[#45D0EC] text-center font-semibold">UI/UX</div>
@@ -100,23 +100,23 @@
             </form>
         </div>
         
-        <nav class="flex items-center justify-center rounded-xl z-10 backdrop-blur-sm bg-white/10 w-[435px]" id="nav_bar">
-            <div class="rounded-xl  absolute flex gap-10 items-center px-3 py-3 z-50 w-full">
+        <nav class="flex items-center justify-center rounded-xl z-10 backdrop-blur-sm bg-white/10 sm:w-[435px] w-[360px]" id="nav_bar">
+            <div class="rounded-xl  absolute flex sm:gap-8 gap-5 items-center px-3 py-3 z-50 w-full">
                 <ul class="w-16 flex justify-center items-center backdrop-blur-sm bg-white/40 rounded-full">
                     <li><img src="Images/me_6.png" alt=""></li>
                 </ul>
-                <ul class="flex text-xl text-white gap-12 font-semibold justify-evenly w-full">
+                <ul class="flex sm:text-xl text-lg text-white sm:gap-12 gap-7 font-semibold justify-evenly w-full">
                     <!-- <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li> -->
                     <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li>
                     <li id="about-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">About Me</li>
                     <li id="contact-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Contact</li>
                 </ul>
             </div>
-            <div class="rounded-xl w-full bg-[#00999F] flex gap-10 items-center animate-water opacity-60 px-3 py-3 -z-50">
+            <div class="rounded-xl w-full bg-[#00999F] flex sm:gap-8 gap-5 items-center animate-water opacity-60 px-3 py-3 -z-50">
                 <ul class="w-16 bg-[#00999F] rounded-full flex justify-center items-center">
                     <li><img src="Images/me_4-fotor-20240115134454.png" alt=""></li>
                 </ul>
-                <ul class="flex text-xl text-white gap-12 font-semibold justify-evenly w-full">
+                <ul class="flex sm:text-xl text-lg text-white sm:gap-12 gap-7 font-semibold justify-evenly w-full">
                     <!-- <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li> -->
                     <!-- <li id="skill-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">Skills</li>
                     <li id="about-btn" class="hover:scale-[1.2] hover:text-[#09E6F6] duration-300 cursor-pointer">About Me</li>

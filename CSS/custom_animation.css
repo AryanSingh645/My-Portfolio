@@ -76,39 +76,6 @@
     background: conic-gradient(rgb(69, 208, 236) 30deg, white 0deg);
     z-index: 10;
 }
-.circular_progressbar.html::before{
-    content: '';
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    /* background: #000; */
-    background-image: url("../Images/front-end_2.png");
-    background-size: cover;
-    border-radius: 50%;
-    z-index: -10;
-}
-.circular_progressbar.python::before{
-    content: '';
-    position: absolute;
-    height: 147px;
-    width: 147px;
-    /* background: #000; */
-    background-image: url("../Images/python.png");
-    background-size: cover;
-    border-radius: 50%;
-    z-index: -10;
-}
-.circular_progressbar.uiux::before{
-    content: '';
-    position: absolute;
-    height: 147px;
-    width: 147px;
-    /* background: #000; */
-    background-image: url("../Images/ui-ux.png");
-    background-size: cover;
-    border-radius: 50%;
-    z-index: -10;
-}
 .water_fill{
     background-image: url("../Images/11zon_resized_5.png");
     background-repeat: repeat-x;
