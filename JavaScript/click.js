@@ -113,7 +113,7 @@ function handleMediaQuery_Close(mediaQuery){
     }
 }
 
-const mediaQuery = window.matchMedia('(max-width: 780px)');
+const mediaQuery = window.matchMedia('(max-width: 780px) and (min-width: 582px)');
 document.getElementById("skill-btn").onclick = function(){
     if(a == false){
 
